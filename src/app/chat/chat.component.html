@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="chatbox">
+        <ul class="list-group">
+            <li *ngFor="let message of messages">
+                <div *ngIf="message.user==user; else elseBlock" class="selfmessage">
+                    <label>Vous:</label>
+                    <div class="card text-white bg-primary">
+                        {{message.text}}
+                    </div>
+                </div>
+                <ng-template #elseBlock >
+                    <div class="othermessage">
+                        <label>{{user}}:</label>
+                        <div class="card bg-light">
+                            {{message.text}}
+                        </div>
+                    </div>
+                </ng-template>
+                
+            </li>
+        </ul>
+    </div>
+    <div class="sendbox">
+        <input class="chatinput" type="text" id={{user}} #newItem>
+        <button class="btn btn-primary" type="button" (click)="addNewItem(newItem.value)">OK</button>
+    </div>
+    
+</div>

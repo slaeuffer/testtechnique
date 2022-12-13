@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Message } from 'src/models/message.model';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testtechnique';
+  messageList: Message[] = [];
+
+  addItem(newMessage: Message) {
+    this.messageList.push(newMessage);
+  }
 }

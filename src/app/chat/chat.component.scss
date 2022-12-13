@@ -1,0 +1,41 @@
+.chatbox {
+    margin: 20px;
+    width:500px;
+    height:500px;
+    overflow-y:scroll;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2)  ;
+}
+
+.sendbox {
+    margin: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.selfmessage {
+    margin-bottom: 10px;
+    margin-left:150px;
+    margin-right:20px
+}
+
+.othermessage {
+    margin-bottom: 10px;
+    margin-left:20px;
+    margin-right:150px
+}
+
+.card {
+    padding:7px;
+}
+
+button{
+    margin-left: 10px;
+}
+
+label {
+    color: rgb(131, 131, 131);
+    font-size: 12px;
+    margin-left:10px
+}
